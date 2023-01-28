@@ -15,7 +15,7 @@ class CreateTasksTabel extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('creator_id');
+            $table->integer('creator_id');
             $table->string('title');
             $table->string('content');
             $table->string('status_id');
